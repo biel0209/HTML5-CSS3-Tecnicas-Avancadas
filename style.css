@@ -1,0 +1,177 @@
+@keyframes animacao{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes animacao2{
+  0% {}
+  30% {transform: scale(1.2);}
+  60% {}
+  100% {opacity: 0.5;}
+}
+
+@keyframes animacao3{
+  from {left: 0;}
+  to {left: 200px;}
+}
+
+@keyframes animacao4{
+  from {left: 0;}
+  to {left:500px;}
+}
+
+
+
+body{
+  margin-left: 100px;
+}
+
+.box{
+  width: 70px;
+  height: 50px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#animation-div{
+  background-color: red;
+  animation-name: animacao;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+}
+
+#animation-div2{
+  background-color: rgb(0, 255, 76);
+  animation-name: animacao2;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+}
+
+#animation-div3{
+  background-color: rgb(89, 0, 255);
+  animation-name: animacao3;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 2s;
+}
+
+#animation-div4{
+  background-color: rgb(255, 196, 0);
+  animation-name: animacao4;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+}
+
+#animation-div5{
+  background-color: aqua;
+  animation-name: animacao4;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease;
+
+}
+
+#animation-div6{
+  background-color: black;
+  animation-name: animacao4;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in;
+}
+
+#animation-div7{
+  background-color: blueviolet;
+  animation-name: animacao4;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-out;
+}
+
+#animation-div8{
+  background-color: chocolate;
+  animation-name: animacao4;
+  animation-iteration-count: infinite;
+  animation-duration:5s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+#animation-div9{
+  background-color: rgb(233, 11, 22);
+  animation: animacao4 5s linear 0.1s infinite;
+}
+
+.div-calc{
+  height: 250px;
+  width: 500px;
+  position: relative;
+  margin: 20px;
+  background-color: #ddd;
+  border: 1px solid red;
+}
+
+.innerdiv-calc{
+  height: 50px;
+  margin: 10px;
+  position: relative;
+  background-color: red;
+}
+
+.calc1{
+  width: calc(50% + 50px);
+}
+
+.calc2{
+  width: calc(50% - 50px);
+}
+
+.calc3{
+  width: calc(50% - 25%/2);
+}
+
+.calc4{
+  width: calc(50% + 50%/2);
+}
+
+.gradient-box{
+  width: 500px;
+  height: 200px;
+  position: relative;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.gradient1{
+  background-image: linear-gradient(purple, blue);
+}
+
+.gradient2{
+  background-image: linear-gradient(to right, purple, blue);
+}
+
+.gradient3{
+  background-image: linear-gradient(to left, rgb(223, 130, 9), rgb(255, 238, 0));
+}
+
+.gradient4{
+  background-image: linear-gradient(to right, rgb(168, 168, 167),rgb(41, 41, 40));
+}
+
+.gradient5{
+  background-image: radial-gradient(#3a3042, #db9d47, #ff784f);
+}
+
+.gradient6{
+  background-image: radial-gradient(#3a3042 10%, #db9d47 30%, #ff784f);
+}
+
+.gradient7{
+  background-image: radial-gradient(circle, #3a3042 10%, #db9d47 30%, #ff784f);
+}
